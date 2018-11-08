@@ -1,0 +1,13 @@
+$primary-color: blue;
+$seconddary-color: red; 
+
+.list-page {
+    h1 {
+        color:$primary-color; 
+        font-size: 64px;
+    }
+    p {
+        color:$seconddary-color;
+    }
+}
+

@@ -13,8 +13,12 @@ app.engine('mustache', mustache);
 app.set('view engine', 'mustache')
 
 
-app.get('/list', (req,res) => {
-    res.render('list')
+app.get('/list-page', (req,res) => {
+    res.render('list-page')
+})
+
+app.get('/book-form', (req,res) => {
+    res.render('book-form')
 })
 
 app.listen(process.env.PORT, () => {
