@@ -8,5 +8,9 @@ h1 {
     font-size: 2em;
 }
 
+td {
+    padding: 10px;
+}
+
 @import 'list-page';
 @import 'book-form';

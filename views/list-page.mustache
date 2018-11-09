@@ -1,12 +1,30 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Book List</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body class="list-page">
-       <h1>List Page</h1>
-       <p>Currently no books listed</p>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Book List</title>
+    <link rel="Stylesheet" href="/style.css" />
+  </head>
+  <body class="list-page">
+
+    <h1>Book List Page</h1>
+
+    <table>
+    {{#books}}
+      <tr>
+        <td>{{book_id}}</td>
+        <td>{{title}}</td>
+        <td>{{authors}}</td>
+        <td><a href="/book/edit/{{book_id}}">edit</td>
+        <td>
+          <form method="POST" action="/book/delete/{{book_id}}">
+            <button type="submit">delete</button>
+          </form>
+        </td>
+      </tr>
+    {{/books}}
+    </table>
+
+
+  </body>
 </html>

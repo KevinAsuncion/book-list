@@ -51,12 +51,18 @@ body {
 h1 {
   font-size: 2em; }
 
+td {
+  padding: 10px; }
+
 .list-page h1 {
   color: blue;
   font-size: 64px; }
 
 .list-page p {
   color: red; }
+
+.list-page td {
+  margin-left: 20px; }
 
 .book-form h1 {
   color: orange;
